@@ -1,0 +1,4 @@
+1.- Modulo devel
+2.- modulo-> Activar web profile
+3.- Activar los errores. 
+configuration->loggin_errors  activar el que dice todos.
