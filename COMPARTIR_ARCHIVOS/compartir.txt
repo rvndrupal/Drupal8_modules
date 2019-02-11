@@ -1,0 +1,10 @@
+Compartir archivos de la Maquina Virtual.
+
+Crear Carpetas en cada uno.
+
+Configurar carpeta compartida.
+
+En ubuntu ponemos el siguiente comando para compartir.
+
+sudo mount -t vboxsf compartir  /home/rodrigo/Escritorio/compartir
+
