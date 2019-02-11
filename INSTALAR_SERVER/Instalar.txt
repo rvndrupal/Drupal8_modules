@@ -1,0 +1,83 @@
+1.- sudo apt-get update
+
+##si hay problemas de bloque  var/lib/dpkg
+sudo fuser -vki  /var/lib/dpkg/lock
+
+#########
+
+2.- sudo apt-get upgrade
+3.- sudo apt-get install apache2
+
+Configurar el servidor.
+##################################
+
+sudo ufw app list
+
+--> habilitar  sudo ufw allow 'Apache'
+
+parar servidor --> sudo systemctl stop apache2
+
+Iniciar --> sudo systemctl start apache2
+
+Reiniciar-->  sudo systemctl restart apache2
+
+https://maslinux.es/como-configurar-el-servidor-apache/ -->chingona configurar
+
+ES CON ESTO 
+
+sudo a2enmod rewrite  --> SE INSTALA  Y EN EL ARCHIVO
+cd /etc/apache2/apache2.conf  
+
+poner  la variable ALL
+
+<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Require all granted
+</Directory>
+
+
+##########################3
+
+4.-Probamos servidro pagina localhost o con ifconfig
+
+5.-Creamos pagina de muestra estando estando
+
+    cd /var/www/html
+
+  sudo nano prueba.html
+
+6.- sudo nano /etc/hosts
+
+Cambiar el host donde dice localhost -> ponemos lo que queramos.
+
+7.-sudo apt-get install mysql-server
+
+Datos del usuario root
+
+8.-sudo apt-get install phpmyadmin php-mbstring php-gettext
+
+Seleccionar apache2
+
+se configura
+
+por ultimo se habilita la extension 
+
+sudo phpenmod mbstrin
+
+sudo systemctl restart apache2
+
+
+##################CONFIGURAR UN NUEVO usuario
+
+sudo mysql
+
+CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena';
+
+GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+Limpiamos los privilegios.
+
+

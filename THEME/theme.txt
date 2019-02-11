@@ -1,0 +1,21 @@
+Crear el plantilla.
+
+Esto se crea el el archivo [modulo].module
+
+function hook_theme($existing, $type, $theme, $path) {
+  return [
+      'hero_list' =>[
+          'variables'=>['items'=>[], 'title'=>''],
+      ]
+  ];
+
+}
+
+###################3
+Luego se crea la carpeta --> templates
+
+dentro se crea el archivo twig
+
+Cone el nombre que se le puso en theme-> hero-list
+
+se guarda en hero-list.html.twig
