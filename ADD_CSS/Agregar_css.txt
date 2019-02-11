@@ -1,0 +1,43 @@
+Agregando el css.
+
+Se agregan los css en la carpeta que se rea de css.
+
+luego se hace un nuevo archivo.
+
+heroe.libraries.yml
+
+# fluffiness.libraries.yml
+cuddly-slider:
+  version: 1.x
+  css:
+    theme:
+      css/cuddly-slider.css: {}
+  js:
+    js/cuddly-slider.js: {}
+
+
+####################
+Ejemplo 
+
+heroe-estilos:
+  version: 1.x
+  css:
+    theme:
+      css/animate.css: {}
+
+
+
+Para agregarlo en la hoja twig
+
+en la parte de Arriba de pone la ruta.
+
+{{ attach_library('heroe/heroe-estilos') }}
+
+va el nombre del modulo y el nombre que se le puso en la hoja
+de estilos.
+
+
+Agregar efecto.
+
+<h4 class="animated bounce delay-2s"> Bienvenido {{ title }}  </h4>
+Pagina de animate.css

@@ -16,6 +16,8 @@ Luego se crea la carpeta --> templates
 
 dentro se crea el archivo twig
 
-Cone el nombre que se le puso en theme-> hero-list
+Con el nombre que se le puso en theme-> hero-list
+
+OJO GUION MEDIO EN LA PLANTILLA DE TWIG
 
 se guarda en hero-list.html.twig
