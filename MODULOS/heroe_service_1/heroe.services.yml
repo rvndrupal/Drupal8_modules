@@ -1,0 +1,3 @@
+services:
+  heroe.heroe_articles:
+    class: Drupal\heroe\HeroeArticleService
