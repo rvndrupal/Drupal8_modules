@@ -1,0 +1,42 @@
+1.-Tools -> new snnipet
+
+2.-Guardar .sublime-snippet
+
+Ejemplo.
+
+
+<snippet>
+	<content><![CDATA[
+
+    public function getFormId(){
+		return "hero_heroform";
+	}
+
+
+	public function ${1:nombre}Form(array $2form, FormStateInterface $3form_state) {
+	
+    $4form['nom_1']=[
+		'#type'=>'textfield',
+		'#title'=>$this->t('Rival one'),
+
+	];
+
+
+	$form['submit']=[
+		'#type'=>'submit',
+		'#value'=>$this->t('Who will win ?'),
+	];
+
+
+	return $5form;
+	}
+
+
+
+]]></content>
+<tabTrigger>dru-form</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
