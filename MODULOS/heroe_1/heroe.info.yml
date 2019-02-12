@@ -1,0 +1,5 @@
+name: Primer Modulo
+description: Modulo uno 
+package: Custom
+type: module
+core: 8.x

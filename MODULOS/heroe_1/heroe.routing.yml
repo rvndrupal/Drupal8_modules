@@ -1,0 +1,7 @@
+heroe.lista:
+  path: '/lista' 
+  defaults: 
+    _controller: '\Drupal\heroe\Controller\HeroController::index' 
+    _title: 'Los mejores Superheroes.'
+  requirements: 
+    _permission: 'access content' 

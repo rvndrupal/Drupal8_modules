@@ -1,0 +1,5 @@
+heroe-estilos:
+  version: 1.x
+  css:
+    theme:
+      css/animate.css: {}
