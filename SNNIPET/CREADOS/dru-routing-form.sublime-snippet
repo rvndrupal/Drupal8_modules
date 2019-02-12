@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+$1heroe.form:
+  path: '/$2' 
+  defaults: 
+    _form: 'Drupal\/${3:modulo}\Form\/${4:formulario}'
+    _title: '$5'
+  requirements: 
+    _permission: 'access content' 
+]]></content>
+<tabTrigger>dru-routing-form</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

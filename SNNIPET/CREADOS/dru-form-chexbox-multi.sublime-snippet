@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+
+$1form['${2:padre}']['${3:hijo}'] =[
+  '#type' => 'checkboxes',
+  '#options' => array('$4' => $5this->t('$4'), '$6' => $7this->t('$6')),
+  '#title' => $8this->t('$9'),
+];
+
+]]></content>
+<tabTrigger>dru-form-chexbox-multi</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

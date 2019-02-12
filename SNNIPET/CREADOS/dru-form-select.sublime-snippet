@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+
+$1form['$2'] = [
+  '#type' => 'select',
+  '#title' => $3this->t('$4'),
+  '#options' => [
+    '1' => $5this->t('$6'),
+    '2' => $7this->t('$8'),    
+    '3' => $9this->t('$10'),
+    '4' => $11this->t('$12'),
+  ],
+];
+
+]]></content>
+<tabTrigger>dru-form-select</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

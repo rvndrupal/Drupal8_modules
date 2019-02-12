@@ -1,14 +1,13 @@
-1.-Tools -> new snnipet
-
-2.-Guardar .sublime-snippet
-
-Se guardan en rodrigo->.config->sublimetex->pakage->user
-
-Ejemplo.
-
-
 <snippet>
 	<content><![CDATA[
+
+	<?php
+
+	namespace Drupal\{}\Form;
+
+	use Drupal\Core\Form\FormBase;
+
+	use Drupal\Core\Form\FormStateInterface;
 
     public function getFormId(){
 		return "hero_heroform";
@@ -31,6 +30,11 @@ Ejemplo.
 
 
 	return $5form;
+	}
+
+
+	public function submitForm(array &$6form, FormStateInterface $7form_state) {
+
 	}
 
 

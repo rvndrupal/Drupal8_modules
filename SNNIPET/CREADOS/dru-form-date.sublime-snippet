@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+
+$1form['$2'] = [
+  '#type' => 'date',
+  '#title' => $3this->t('$4'),
+  '#default_value' => array(
+    'year' => 2020,
+    'month' => 2,
+    'day' => 15,
+  ),
+];
+
+]]></content>
+<tabTrigger>dru-form-date</tabTrigger> 
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
