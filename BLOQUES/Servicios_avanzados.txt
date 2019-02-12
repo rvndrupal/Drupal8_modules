@@ -1,0 +1,55 @@
+Archivo que consume los articulos.
+
+<?php
+
+namespace Drupal\heroe;
+
+use Drupal\Core\Entity\Query\QueryFactory;
+use Drupal\Core\Entity\EntityManager;
+
+/**
+ * Nuestros heroes Articulos class
+ */
+
+class HeroeArticleService{
+
+	private $entityQuery;
+	private $entityManager;
+
+	public function __construct(QueryFactory $entityQuery, $entityManager)
+	{
+		$this->entityQuery = $entityQuery;
+		$this->entityManager = $entityManager;
+	}
+	/**
+	 * Moetodo para caragr los articulos.
+	 */
+	public function getHeroArticles(){
+		$articulo = ['Hulk is green','flash is red'];
+
+		$articleNids=$this->entityQuery->get('node')->condition('type','article')->execute();
+
+		ksm($this->entityManager->getStorage('node')->loadMultiple($articleNids));
+
+		return $articulo;
+	}
+
+}
+
+##################################################
+Como se manda a llamar.
+
+services:
+  heroe.heroe_articles:
+    class: Drupal\heroe\HeroeArticleService
+    arguments: ['@entity.query','@entity.manager']
+
+
+
+#################################################
+
+Se muestran
+
+$servicio=Drupal::service("heroe.heroe_articles");
+
+ksm($servicio->getHeroArticles());

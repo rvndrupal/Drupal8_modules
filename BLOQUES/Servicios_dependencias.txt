@@ -42,3 +42,4 @@ Se Prueba execute php
 $servicio=Drupal::service("heroe.heroe_articles");
 
 ksm($servicio->getHeroArticles());
+
