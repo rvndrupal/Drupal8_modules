@@ -1,3 +1,7 @@
+Manual oficial.
+
+https://www.drupal.org/docs/8/creating-custom-modules/create-a-custom-block
+
 <?php
 
 namespace Drupal\heroe\Plugin\Block;

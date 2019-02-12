@@ -1,0 +1,44 @@
+Acceso a la base de datos , email, interface muy importante.
+
+Configurando un servicio.
+
+1.- Se crea un archivo dentro de la carpeta SRM.
+nombre--> HeroeArticleService.php
+<?php
+
+namespace Drupal\heroe;
+
+/**
+ * Nuestros heroes Articulos class
+ */
+
+class HeroeArticleService{
+
+
+	/**
+	 * Moetodo para caragr los articulos.
+	 */
+	public function getHeroArticles(){
+		$articulo = ['Hulk is green','flash is red'];
+
+		return $articulo;
+	}
+
+}
+###########################################
+2.-Se manda a llamar en un archivo nuevo en la base del modulo.
+nombre--> heroe.services.yml
+
+Se manda a llamar los datos del archivo creado como servicio.
+
+services:
+  heroe.heroe_articles:
+    class: Drupal\heroe\HeroeArticleService
+
+
+
+Se Prueba execute php
+
+$servicio=Drupal::service("heroe.heroe_articles");
+
+ksm($servicio->getHeroArticles());
