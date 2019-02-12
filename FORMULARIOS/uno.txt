@@ -1,0 +1,62 @@
+heroe.form:
+  path: '/formulario-super' 
+  defaults: 
+    _form: 'Drupal\heroe\Form\HeroForm'
+    _title: 'Carga a los Super-Heroes.'
+  requirements: 
+    _permission: 'access content' 
+
+
+
+############################
+
+<?php
+
+
+namespace Drupal\heroe\Form;
+
+use Drupal\Core\Form\FormBase;
+
+use Drupal\Core\Form\FormStateInterface;
+
+
+class HeroForm extends FormBase{
+
+	public function getFormId(){
+		return "hero_heroform";
+	}
+
+	public function buildForm(array $form, FormStateInterface $form_state) {
+
+	$form['nom_1']=[
+		'#type'=>'textfield',
+		'#title'=>$this->t('Rival one'),
+
+	];
+
+	$form['nom_2']=[
+		'#type'=>'textfield',
+		'#title'=>$this->t('Rival two'),
+
+	];
+
+	$form['submit']=[
+		'#type'=>'submit',
+		'#value'=>$this->t('Who will win ?'),
+	];
+
+	return $form;
+	}
+
+
+
+	public function submitForm(array &$form, FormStateInterface $form_state) {
+		$winner=rand(1,2);
+		$uno=$form_state->getValue('nom_1');
+		$dos=$form_state->getValue('nom_2');
+
+
+		drupal_set_message(t('El ganador de: '). $uno . ' contra ' .$dos. ' es: '  .$winner );
+	}
+
+}
