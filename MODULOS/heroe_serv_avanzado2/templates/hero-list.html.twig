@@ -1,0 +1,11 @@
+{{ attach_library('heroe/heroe-estilos') }}
+
+<h4 class="animated bounce delay-2s"> Bienvenido {{ title }}  </h4>
+
+<ul>
+
+	{% for item in items %}
+        <li>{{ item.name }}</li>
+    {% endfor %}
+	
+</ul>

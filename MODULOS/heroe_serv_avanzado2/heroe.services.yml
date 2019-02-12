@@ -1,0 +1,4 @@
+services:
+  heroe.heroe_articles:
+    class: Drupal\heroe\HeroeArticleService
+    arguments: ['@entity.query','@entity.manager']
