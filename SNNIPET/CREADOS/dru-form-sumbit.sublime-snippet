@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+
+public function submitForm(array &/$1form, FormStateInterface /$2form_state) {
+
+}
+
+]]></content>
+ <tabTrigger>dru-form-sumbit</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

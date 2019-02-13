@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+
+public function validateForm(array &/$1form, FormStateInterface /$2form_state) {
+	$3var=$4form_state->getValue('$5');
+
+
+	$6form_state->setErrorByName('', $7this->t(''));
+}
+
+]]></content>
+
+<tabTrigger>dru-form-validate</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
