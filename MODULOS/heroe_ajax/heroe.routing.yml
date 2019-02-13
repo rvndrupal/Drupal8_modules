@@ -1,0 +1,24 @@
+heroe.lista:
+  path: '/lista' 
+  defaults: 
+    _controller: '\Drupal\heroe\Controller\HeroController::index' 
+    _title: 'Los mejores Superheroes.'
+  requirements: 
+    _permission: 'access content' 
+
+
+heroe.form:
+  path: '/formulario-super' 
+  defaults: 
+    _form: 'Drupal\heroe\Form\HeroForm'
+    _title: 'Carga a los Super-Heroes.'
+  requirements: 
+    _permission: 'access content' 
+
+
+
+
+
+
+
+

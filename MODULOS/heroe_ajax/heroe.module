@@ -1,0 +1,48 @@
+<?php
+
+/**
+*
+* Implentando el tema
+*/
+
+function heroe_theme($existing, $type, $theme, $path) {
+  return [
+      'hero_list' =>[
+         'variables' => ['items' => [], 'title'=>''],
+      ]
+  ];
+
+}
+
+
+function heroe_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+	if($form_id=="node_article_form")
+	{
+		 ksm($form); 
+		//$form['field_tags']['#access']=FALSE;
+		$form['body']['widget']['0']['#title']="Descripciòn de los productos";
+		//$form['field_image']['widget']['0']['#description']="Nueva Descripciòn campo imagen";
+		
+		$form['#validate'][]= '_heroe_articule_validate';
+	}
+}
+
+
+	function _heroe_articule_validate(&$form, $form_state)
+	{
+		//dpm($form_state->getValue('title')[0]['value']);
+		
+		$titulo=$form_state->getValue('title')[0]['value'];
+		//dpm($titulo);
+		
+		if(is_numeric($titulo))
+		{
+
+			$form_state->setErrorByName($titulo , t('El campo tìtulo no puede ser numerico'));
+			
+		}
+	}
+
+	
+
