@@ -1,0 +1,17 @@
+Modificar  un formulario.
+
+En este caso se hizo en el archivo module.
+
+function heroe_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+	if($form_id=="node_article_form")
+	{
+		 ksm($form); 
+		//$form['field_tags']['#access']=FALSE;
+		$form['body']['widget']['0']['#title']="Descripciòn de los productos";
+		//$form['field_image']['widget']['0']['#description']="Nueva Descripciòn campo imagen";
+	}
+
+	
+
+}
