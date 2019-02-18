@@ -1,0 +1,22 @@
+
+1.-sudo apt update
+
+2.-sudo apt-get install curl git snmp -y
+
+
+3.-  cd ~
+
+4.- curl -sS https:/getcomposer.org/installer | php
+
+5.-sudo mv composer.phar /usr/local/bin/composer
+.-->  sudo nano  ~/.bash_profile
+.--> pegar esto -->  PATH=/path/to/php:$PATH
+-->  composer global require drush/drush:dev-master
+
+
+
+
+
+Video --> https://www.youtube.com/watch?v=ZqY_XsCTmAc
+
+
