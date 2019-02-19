@@ -1,0 +1,15 @@
+1.-Editar campos valores.
+
+$node=node_load(1);
+//ksm($node);
+
+$node->get('title')->value="Nuevo valor";
+
+$node->get('body')->value="Nuevo valor para el body";
+
+$node->get('field_tags')->target_id=0;
+
+$node->save();
+
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Datos guardados correctamente con estatus', $messenger::TYPE_STATUS);

@@ -1,0 +1,14 @@
+$node=entity_create('node',array(
+
+    'title'=>'Titulo creado',
+    'body'=>'Nuevo body',
+    'type'=>'article',
+    'uid'=>1,
+
+));
+
+$node->save();
+
+
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Nuevo Nodo creado correctamente con estatus', $messenger::TYPE_STATUS);
