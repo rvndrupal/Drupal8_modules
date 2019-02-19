@@ -1,2 +1,25 @@
 1.-  $node=node_load(1);
 ksm($node);
+dpm($node->get("title")->value);
+
+2.-Mensajes en drupal.
+
+//Con este se muestra un mensaje normal, con el parámetro status.
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Datos guardados correctamente con estatus', $messenger::TYPE_STATUS);
+ 
+//Con este se muestra un mensaje normal, sin el parámetro status.
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Datos guardados correctamente');
+ 
+//Con este se muestra un mensaje de forma de pregunta y del tipo advertencia.
+$messenger = \Drupal::messenger();
+$messenger->addMessage('¿Deseas eliminar este registro?', $messenger::TYPE_WARNING);
+ 
+//Con este se muestra un mensaje que está en ingles y se traduce con la funcion t, y es del tipo error. 
+$messenger = \Drupal::messenger();
+$messenger->addMessage(t('An error occurred and processing did not complete.'), $messenger::TYPE_ERROR);
+
+
+####################################################################3
+

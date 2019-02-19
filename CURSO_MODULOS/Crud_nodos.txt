@@ -1,0 +1,21 @@
+1.-Leer nodo forma corta.
+
+$nodo=node_load(1);
+ksm($nodo);
+
+2.-Leer modo largo.
+
+use Drupal\node\Entity\Node;
+$nodo = Node::load(1);
+
+ksm($nodo);
+
+3.-Funciones importantes.
+
+dpm($nodo->id());  //el id 
+dpm($nodo->bundle);  //tipo article.
+dpm($nodo->inNew);  //si es nuevo el nodo.
+dpm($nodo->label()); //titulo del nodo.
+dpm($nodo->url());   //url del nodo
+
+$nodoDuplicado=$nodo->createDuplicate();
