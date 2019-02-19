@@ -1,0 +1,26 @@
+https://www.drupal.org/docs/8/theming/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
+
+# fluffiness.libraries.yml
+cuddly-slider:
+  version: 1.x
+  css:
+    theme:
+      css/cuddly-slider.css: {}
+  js:
+    js/cuddly-slider.js: {}
+
+
+Agregar la libreria en un archivo
+
+Attaching a library via a Twig template
+You can attach an asset library to a Twig template using the attach_library() function in any *.html.twig, file like so:
+
+{{ attach_library('fluffiness/cuddly-slider') }}
+<div>Some fluffy markup {{ message }}</div>
+
+
+#############
+En un Fromulario.
+function fluffiness_preprocess_maintenance_page(&$variables) {
+  $variables['#attached']['library'][] = 'fluffiness/cuddly-slider';
+}

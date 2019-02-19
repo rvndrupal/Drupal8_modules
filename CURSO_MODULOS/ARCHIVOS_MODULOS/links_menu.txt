@@ -1,0 +1,10 @@
+1.- Link menus en drupal.
+
+https://www.drupal.org/docs/8/creating-custom-modules/add-a-menu-link
+
+hello_world.admin:
+  title: 'Hello module settings'
+  description: 'example of how to make an admin settings page link'
+  parent: system.admin_config_development
+  route_name: hello_world.content  //esto es la ruta a linkear
+  weight: 100

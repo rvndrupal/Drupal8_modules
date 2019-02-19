@@ -1,0 +1,12 @@
+https://www.drupal.org/docs/8/api/form-api/introduction-to-form-api
+
+ahi estan los cuatro metodos que son obligatorios.
+
+
+##Muy importante  mandar a llamar un formulario desde cualquier instanacia.
+
+Retrieving this form outside of routes
+Although Drupal 7's drupal_get_form() is gone in Drupal 8, there is a FormBuilder service that can be used to retrieve 
+and process forms. The Drupal 8 equivalent of drupal_get_form() is the following:
+
+$form = \Drupal::formBuilder()->getForm('Drupal\example\Form\ExampleForm');
