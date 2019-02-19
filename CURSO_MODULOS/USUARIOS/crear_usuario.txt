@@ -1,0 +1,11 @@
+$usuario=entity_create('user',array(
+
+    'name'=>'rodrigo2',
+    'mail'=>'rodrigo2@gmail.com',
+    'status'=>1,
+
+));
+
+$usuario->save();
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Usuario creado Correctamente', $messenger::TYPE_STATUS);

@@ -31,6 +31,19 @@ $user=Drupal\user\Entity\User::load($userid);
 
 //ksm(user);
 
+
+#####
+$userid=Drupal::currentUser()->id();
+
+$user=Drupal\user\Entity\User::load($userid);
+
+//ksm(user);
+
 dpm($user->get('name')->getValue());
 dpm($user->get('name')->value);
+
+dpm($user->get('roles')->getValue());
+dpm($user->get('roles')[0]->target_id);
+
+
 

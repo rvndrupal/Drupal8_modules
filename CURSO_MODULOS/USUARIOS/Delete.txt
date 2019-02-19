@@ -1,0 +1,6 @@
+$usuario=Drupal\user\Entity\User::load(4);
+
+$usuario->delete();
+
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Usuario eliminado Correctamente', $messenger::TYPE_STATUS);

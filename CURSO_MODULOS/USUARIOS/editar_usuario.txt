@@ -1,0 +1,12 @@
+$userid=Drupal::currentUser()->id();
+
+$user=Drupal\user\Entity\User::load($userid);
+
+
+$user->get('name')->value="Rodrigo_Villanueva";
+$user->get('mail')->value="rodrigodrupal1@gmail.com";
+
+$user->save();
+
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Usuario Editado Correctamente', $messenger::TYPE_STATUS);
