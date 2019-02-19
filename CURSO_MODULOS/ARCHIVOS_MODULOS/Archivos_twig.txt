@@ -1,0 +1,7 @@
+1.- Info.
+
+https://www.drupal.org/docs/8/theming/twig/create-custom-twig-templates-for-custom-module
+
+buena 
+
+https://www.drupal.org/docs/8/creating-custom-modules/theming
