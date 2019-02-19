@@ -1,0 +1,36 @@
+1.-Para mostrar un Usuario.
+
+use Drupal\user\Entity\User;
+
+$user=User::load(1);
+
+ksm($user);
+
+2.-Leer el usuario que esta logueado actualmente.
+
+$usuario=Drupal::currentUser();
+ksm($usuario);
+
+$userid=Drupal::currentUser()->id();
+
+dpm($userid);
+
+AHora obtener la información del usuario.
+
+$userid=Drupal::currentUser()->id();
+
+$user=Drupal\user\Entity\User::load($userid);
+
+ksm(user);
+
+AHora para acceder a los campos.
+
+$userid=Drupal::currentUser()->id();
+
+$user=Drupal\user\Entity\User::load($userid);
+
+//ksm(user);
+
+dpm($user->get('name')->getValue());
+dpm($user->get('name')->value);
+

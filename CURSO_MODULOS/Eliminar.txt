@@ -1,0 +1,8 @@
+$node=node_load(1);
+
+$node->delete();
+
+
+$messenger = \Drupal::messenger();
+$messenger->addMessage('Eliminado Correctamente', $messenger::TYPE_STATUS);
+
