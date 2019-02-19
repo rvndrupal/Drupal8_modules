@@ -10,6 +10,8 @@ $nodo = Node::load(1);
 
 ksm($nodo);
 
+kpr($nodo);
+
 3.-Funciones importantes.
 
 dpm($nodo->id());  //el id 
@@ -19,3 +21,25 @@ dpm($nodo->label()); //titulo del nodo.
 dpm($nodo->url());   //url del nodo
 
 $nodoDuplicado=$nodo->createDuplicate();
+
+4.-Leer campo forma larga.
+
+$nodo=node_load(1);
+ksm($nodo);
+dpm($nodo->get('title')->getValue() );  //nos muestra la estructura
+dpm($nodo->get('title')->getValue()[0][value] );  //tari su valor.
+
+dpm($nodo->('uid')->getValue() );  //campo por referencia.
+
+dpm($nodo->('uid')->getValue()[0][target_id] );  //se encuentra su valor.
+
+
+4.Forma corta de llegar a los campos.
+
+Normales.
+$node=node_load(1);
+//ksm($node);
+
+dpm($node->get('title')->value);
+
+dpm($node->get('field_tags')->target_id ); 
