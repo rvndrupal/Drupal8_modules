@@ -1,0 +1,37 @@
+1.-Ruta.
+
+https://www.drupal.org/docs/8/api/routing-system/introductory-drupal-8-routes-and-controllers-example
+
+example.content:
+  path: '/example' 
+  defaults: 
+    _controller: '\Drupal\example\Controller\ExampleController::content' 
+    _title: 'Hello World'
+  requirements: 
+    _permission: 'access content' 
+
+
+2.-Con parametros.
+
+https://www.drupal.org/docs/8/api/routing-system/using-parameters-in-routes
+
+example.user:
+  path: '/example/{user}'
+  defaults: 
+    _controller: '\Drupal\example\Controller\ExampleController::content' 
+  requirements: 
+    _permission: 'access content' 
+
+###########################
+En el controlador
+
+use Drupal\Core\Session\AccountInterface;
+use Symfony\Component\HttpFoundation\Request;
+
+class ExampleController {  
+  
+  // ...
+  public function content(AccountInterface $user, Request $request) {
+    // Do something with $user.
+  }
+}
