@@ -1,0 +1,36 @@
+Si tienen problemas ejecutando kint/ksm en xampp y windows.
+Sección 1, Clase 3
+Si al ver el siguiente video presentan problemas ejecutando el comando Kint/ksm en windows y con Xampp, este artículo les puede server.
+
+1) Vamos a esta ruta  C:\xampp\php\
+
+y hacemos una copia del archivo php.ini y lo llamamos php original.ini.
+
+Luego abrimos el archivo php.ini y cambiamos los siguientes parametros:
+
+max_execution_time = 600
+max_input_time = 600
+memory_limit = 512M
+post_max_size = 64M
+upload_max_filesize = 64M
+mysql.connect_timeout = 600
+Nota: Descomente esta línea en el mismo archivo eliminando; en la primera columna:
+
+extension=php_fileinfo.dll
+
+
+
+2) Luego vamos a la siguiente ruta: C:\xampp\mysql\bin\my.ini, hacer una copia y luego editar el archivo my.ini
+
+Editamos el archivo my.ini y cambiamos los siguientes parametros:
+
+max_allowed_packet = 256M
+innodb_log_file_size = 256M
+innodb_flush_log_at_trx_commit = 2
+ 3) Apagar encender apache/mysql.
+
+Ya debe de funcionarles. 
+
+Agradecemos a Jonathan Diaz quien nos orientó en esta solución. 
+
+Saludos y Dios les bendiga.
