@@ -8,3 +8,13 @@ Ahi esta la ruta que es:
 Iniciar --> sudo systemctl start apache2
 
 Reiniciar-->  sudo systemctl restart apache2
+
+
+Arreglr kint 
+
+https://gist.github.com/JPustkuchen/a5f1eaeb7058856b7ef087b028ffdfeb
+
+if(class_exists('Kint')){
+  // Set the maxlevels to prevent out-of-memory. Currently there doesn't seem to be a cleaner way to set this:
+  Kint::$maxLevels = 6;
+}
