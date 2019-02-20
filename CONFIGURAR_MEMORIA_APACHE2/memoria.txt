@@ -3,3 +3,8 @@ Fijarte en el php.info  y buscar el php.ini
 Ahi esta la ruta que es:
 
 /etc/php/7.2/apache2$ sudo nano php.ini 
+
+
+Iniciar --> sudo systemctl start apache2
+
+Reiniciar-->  sudo systemctl restart apache2
