@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+
+$1form['information'] = array(
+  '#type' => 'vertical_tabs',
+  '#default_tab' => 'edit-publication',
+   '#title' => t('Informaciòn'),
+);
+
+
+]]></content>
+<tabTrigger>dru-form-vertical_tab</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

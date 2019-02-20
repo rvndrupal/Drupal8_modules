@@ -1,0 +1,92 @@
+<?php
+
+
+function alterar_formulario_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+	dpm($form_id); //muestra nombre del formulario.
+	ksm($form); 
+
+	if($form_id=="node_article_form")
+	{
+		/*$form['field_celular']['widget']['0']['value']['#placeholder']='Digite su Celular';
+		$form['field_celular']['widget']['0']['value']['#attributes']['class'][] = 'cla_cel';
+		//$form['field_celular']['widget']['0']['value']['#attributes']['style'][] = 'background-color:red';
+		$form['field_celular']['widget']['0']['value']['#description']="Digite su tèlefono celular";
+		$form['field_celular']['widget']['0']['value']['#required']=TRUE;*/
+
+
+		$form['Articulo'] = array(
+		  '#type' => 'fieldset',
+		  '#title' => t('Campos del Articulo'),
+		);
+		
+		
+		$form['Articulo']['title'] = $form['title'];
+		$form['Articulo']['body'] = $form['body'];
+
+		hide($form['title']);
+		hide($form['body']);
+
+
+		$form['vendedor'] = array(
+		  '#type' => 'details',
+		  '#title' => t('Vendedor'),
+		);
+
+		$form['vendedor']['field_nombre_y_apellido']=$form['field_nombre_y_apellido'];
+		$form['vendedor']['field_correo']=$form['field_correo'];
+		$form['vendedor']['field_celular']=$form['field_celular'];
+
+
+		hide($form['field_nombre_y_apellido']);
+		hide($form['field_correo']);
+		hide($form['field_celular']);
+
+
+		$form['information'] = array(
+		  '#type' => 'vertical_tabs',
+		  '#default_tab' => 'edit-publication',
+		   '#title' => t('Informaciòn'),
+		);
+		
+		
+
+
+		$form['datos'] = array(
+		  '#type' => 'details',
+		  '#title' => t('Imagen'),
+		  '#group' => 'information',//para que este en el vertical-tabs
+		);
+
+		$form['datos']['field_image']=$form['field_image'];
+		$form['datos']['field_tags']=$form['field_tags'];
+		
+
+
+		hide($form['field_image']);
+		hide($form['field_tags']);
+
+
+
+		$form['datos2'] = array(
+		  '#type' => 'details',
+		  '#title' => t('Precio'),
+		  '#group' => 'information',
+		);
+
+		$form['datos2']['field_precio']=$form['field_precio'];
+		$form['datos2']['field_paquetes']=$form['field_paquetes'];
+		
+
+
+		hide($form['field_precio']);
+		hide($form['field_paquetes']);
+		
+		
+		
+		
+		 
+
+	}//id del form
+
+}//alter
