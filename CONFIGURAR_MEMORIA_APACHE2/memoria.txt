@@ -12,6 +12,8 @@ Reiniciar-->  sudo systemctl restart apache2
 
 Arreglr kint 
 
+Se busca el archivo en devel-8.x->devel->kint->kint->kint.class.php se pone hasta abajo.
+
 https://gist.github.com/JPustkuchen/a5f1eaeb7058856b7ef087b028ffdfeb
 
 if(class_exists('Kint')){
