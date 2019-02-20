@@ -1,0 +1,3 @@
+Ubuntu
+
+mysql -u rodrigo -p test < /home/rodrigo/Descargas/base.sql 
