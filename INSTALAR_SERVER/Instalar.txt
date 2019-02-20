@@ -80,4 +80,7 @@ FLUSH PRIVILEGES;
 
 Limpiamos los privilegios.
 
+sudo systemctl stop mysql
+
+sudo systemctl start mysql
 
