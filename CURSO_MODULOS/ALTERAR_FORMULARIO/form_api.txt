@@ -1,3 +1,7 @@
 1.- ELementos de un Formulario.
 
 https://api.drupal.org/api/drupal/elements/8.2.x
+
+Se muestra los atributos en la api de drupal 7
+
+https://api.drupal.org/api/drupal/developer%21topics%21forms_api_reference.html/7.x

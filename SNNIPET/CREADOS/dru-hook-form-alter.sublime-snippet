@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+
+function hook_form_alter(&$1form, \Drupal\Core\Form\FormStateInterface $2form_state, $3form_id) {
+
+}
+
+]]></content>
+<tabTrigger>dru-hook-form-alter</tabTrigger>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
