@@ -1,0 +1,8 @@
+Pagina de Limit validation errors.
+
+https://api.drupal.org/api/drupal/developer%21topics%21forms_api_reference.html/7.x#limit_validation_errors
+
+
+se agrega esto al submit o cancel.
+
+'#limit_validation_errors' => array()
