@@ -1,0 +1,36 @@
+1.-Instalar drupal.
+
+drush dl drupal-7.4 --drupal-project-rename=nombre
+
+drush dl drupal --drupal-project-rename=miDrupal
+
+drush cc --> limpia cache
+
+drush pml -->lista los modulos
+
+drush pml | grep views  -->ver si el modulo existe
+
+drush updatedb  --> actualiza la base de datos.
+
+drush up -->Actualizar todo el sitio
+
+drush dl module_name  -->descargar
+
+drush en -y module_name --> Habilitar
+
+drush dis module_name -->deshabilitarlo
+
+drush pm-uninstall module_name -->desinstalarlo
+
+drush rl module_name --> buscar modulo
+
+drush user-add-role "nombre_del_rol" id_usuario  --> rola un usuario.
+
+drush upwd --password="nueva_contraseña" nombre_de_usuario -->paswwor da un usuario.
+
+drush cron --> ejecutar cron
+
+##################
+composer
+
+composer require drupal/(nombre del módulo)  -->instalar modulo

@@ -1,0 +1,42 @@
+1.-https://www.youtube.com/watch?v=J9bjOD3s02o
+
+1.-curl https://drupalconsole.com/installer -L -o drupal.phar
+
+2.- mv drupal.phar /usr/local/bin/drupal
+
+3.- chmod +x /usr/local/bin/drupal
+
+4.-drupal self-update  -->se actualiza la consola
+
+
+
+
+#######################
+instalar drupal
+
+1.-drupal init --override
+
+drupal chain --file=~/.console/chain/quick-start.yml  --duda
+
+drupal site:new [version-opcional]
+
+.-estando en la carpeta
+
+drupal site:install
+
+
+drupal self-update
+
+
+####################################
+Modulos.
+
+ module:dependency:install (modi)        Install dependencies module in the application
+  module:download (mod)                   Download module or modules in application
+  module:install (moi)                    Install module or modules in the application
+  module:path (mop)                       Returns the relative path to the module (or absolute path)
+  module:uninstall (mou)                  Uninstall module or modules in the application
+  module:update (moup)                    Update core, module or modules in the application
+
+
+drupal moi devel devel_php admin_toolbar search_kint

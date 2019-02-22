@@ -23,3 +23,15 @@ Move drush.phar to a location listed in your $PATH, rename to drush:
 sudo mv drush.phar /usr/local/bin/drush
 
 composer global require drush/drush
+
+######## Probar.
+
+drush init
+
+
+###########################################
+
+Luego ir a tu citio de drupal /var/www/html/modulos.
+
+
+composer global require drush/drush   -->ejecutarlo
