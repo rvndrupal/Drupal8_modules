@@ -1,0 +1,25 @@
+Video--> https://www.youtube.com/watch?v=ZqY_XsCTmAc
+
+1.- sudo apt install curl php-cli php-mbstring git unzip
+
+2.-curl -sS https://getcomposer.org/installer | php
+
+3.-mv composer.phar /usr/local/bin/composer
+
+
+##############################
+Drush
+
+Configurar path.
+
+Linux:
+
+wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar
+
+Make downloaded file executable: chmod +x drush.phar
+
+Move drush.phar to a location listed in your $PATH, rename to drush:
+
+sudo mv drush.phar /usr/local/bin/drush
+
+composer global require drush/drush
