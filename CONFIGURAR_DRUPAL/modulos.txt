@@ -7,3 +7,14 @@ configuration->loggin_errors  activar el que dice todos.
 Arreglar lo de kint 
 
 https://gist.github.com/JPustkuchen/a5f1eaeb7058856b7ef087b028ffdfeb
+
+
+
+Aumentar los recursos.
+
+max_execution_time = 600
+max_input_time = 600
+memory_limit = 512M
+post_max_size = 64M
+upload_max_filesize = 64M
+mysql.connect_timeout = 600

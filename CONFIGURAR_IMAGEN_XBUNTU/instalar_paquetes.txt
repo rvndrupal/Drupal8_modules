@@ -1,0 +1,32 @@
+Deben de descargar el paquete desde la pagina oficial de Google Chrome, por lo que deberán de dirigirse al siguiente enlace para obtener el paquete.
+
+O desde la terminal con:
+
+
+ 
+1
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+Hecha la descarga del paquete pueden realizar la instalación directa con su gestor de paquetes preferido, o desde la terminal pueden hacerlo tecleando el siguiente comando:
+
+1
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+Y en caso de tener problemas con las dependencias, estas las solucionas tecleando el siguiente comando:
+
+1
+sudo apt install -f
+Instalando Google Chrome en Debian, Ubuntu y derivados desde repositorio
+También es posible poder instalar el navegador sin necesidad de tener que descargar le paquete deb, para esto es necesario añadir un repositorio al sistema, el cual lo añaden con el siguiente comando:
+
+1
+sudo nano /etc/apt/sources.list.d/google-chrome.list
+
+
+####################
+
+sudo apt-get install apt-transport-https  --> muy importante para alcanzar los https
+
+################################333
+
+
+
+
