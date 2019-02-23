@@ -39,4 +39,10 @@ Modulos.
   module:update (moup)                    Update core, module or modules in the application
 
 
-drupal moi devel devel_php admin_toolbar search_kint
+drupal moi devel devel_php admin_toolbar search_kint  
+
+drupal moi panels page_manager
+
+drupal dcs  --> pone a drupal en modo mantenimiento.
+
+drupal dt, tde
