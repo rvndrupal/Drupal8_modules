@@ -1,6 +1,8 @@
 ###################################33
 Dentro del Tema.
 
+https://www.drupal.org/docs/8/theming/adding-stylesheets-css-and-javascript-js-to-a-drupal-8-theme
+
 
 1.-Crear o modificar --> bartik.libraries.yml
 
@@ -15,3 +17,13 @@ cuddly-slider:
       css/cuddly-slider-theme.css: {}
   js:
     js/cuddly-slider.js: {}
+
+
+
+3.-Agregar la hoja de estilos.
+
+libraries:
+  - bartik/global-styling
+  - bartik/estilos.personales
+
+  ene l info.yml
