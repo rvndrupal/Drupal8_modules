@@ -1,5 +1,15 @@
 1.-https://www.youtube.com/watch?v=J9bjOD3s02o
 
+###############################3
+ADD composer
+1.- sudo apt install curl php-cli php-mbstring git unzip
+
+2.-curl -sS https://getcomposer.org/installer | php
+
+3.-mv composer.phar /usr/local/bin/composer
+
+########################################
+
 1.-curl https://drupalconsole.com/installer -L -o drupal.phar
 
 2.- mv drupal.phar /usr/local/bin/drupal
