@@ -6,7 +6,7 @@ ADD composer
 
 2.-curl -sS https://getcomposer.org/installer | php
 
-3.-mv composer.phar /usr/local/bin/composer
+3.-sudo mv composer.phar /usr/local/bin/composer
 
 ########################################
 

@@ -1,0 +1,9 @@
+Donde este el archivo  ->Descargas
+
+tar -zxvf nombredelarchivo.tar.gz
+
+./configure
+
+make
+
+make install
