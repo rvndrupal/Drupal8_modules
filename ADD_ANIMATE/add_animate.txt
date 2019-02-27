@@ -1,0 +1,27 @@
+1.-libreria download.
+
+https://raw.githubusercontent.com/daneden/animate.css/master/animate.css
+
+2.-Agregar a la carpeta css del tema.
+
+3.-se agrega en libraries.yml
+
+animate_curso:
+  version: 1.x
+  css:
+    theme:
+      css/animate.css: {}
+
+
+4.-en info.yml
+
+
+libraries:
+  - bartik/global-styling
+  - bartik/animate_curso
+
+
+
+5.-Agregar a la vista o el bloque.
+
+animated fadeInLeftBig delay-3s  --> o el efecto deseado.
