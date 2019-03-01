@@ -26,7 +26,7 @@ instalar drupal
 
 1.-drupal init --override
 
-drupal chain --file=~/.console/chain/quick-start.yml  --duda
+
 
 drupal site:new [version-opcional]
 
