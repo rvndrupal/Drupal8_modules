@@ -1,0 +1,43 @@
+1.-Poner modo desarrollador.
+
+ir a -->  /var/www/html/curso/web/sites/default/
+
+buscar default.services.yml copiarlo  --> services.yml
+
+Configurar la variable.
+
+linea 58 --> debug  a --> true.
+
+
+INSTRUCCIONES EN ESTA PÁGINA.
+
+https://api.drupal.org/api/drupal/core!modules!views!views.theme.inc/group/views_templates/8.2.x
+
+DONDE DICE --> BEGIN OUTPUT 
+
+<!-- BEGIN OUTPUT from 'core/modules/views/templates/views-view-fields.html.twig' -->
+
+BUSCAR EL ARCHIVO Y COPIARLO EN EL TEMA ACTUAL CARPETA TEMPLATES.
+
+Luego se renombra con el titulo de la vista.
+
+ejemplo
+
+views-view-fields.html.twig ---> por views-view-fields--noticia-template.html.twig
+
+
+se cargan los contenido que vas a mostrar en el view normal y le das la salida en el template.
+
+<div class="container">
+  <div class="col-lg-12">
+  {{ fields.title.content }}
+  </div>
+
+  <div class="col-lg-6">
+  {{ fields.field_descripcionuno.content }}
+  </div>
+
+  <div class="col-lg-6">
+  {{ fields.field_imagenuno.content }}
+  </div>
+</div>

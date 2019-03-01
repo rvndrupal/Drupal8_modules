@@ -55,4 +55,7 @@ drupal moi panels page_manager
 
 drupal dcs  --> pone a drupal en modo mantenimiento.
 
+drupal moi ds field_group bootstrap_layouts
+
+
 drupal dt, tde
