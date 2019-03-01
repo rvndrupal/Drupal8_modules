@@ -1,5 +1,5 @@
-sudo chown www-data -R /var/www/html/drupal8commerce/
-sudo chgrp www-data /var/www/html/drupal8commerce/
-sudo chmod ug+w /var/www/html/drupal8commerce/
-sudo chmod g+s /var/www/html/drupal8commerce/
-sudo usermod -a -G www-data jyc
+sudo chown www-data -R /var/www/html/[proyecto]/
+sudo chgrp www-data /var/www/html/[proyecto]/
+sudo chmod ug+w /var/www/html/[proyecto]/
+sudo chmod g+s /var/www/html/[proyecto]/
+sudo usermod -a -G www-data [usuario]

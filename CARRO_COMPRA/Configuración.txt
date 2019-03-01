@@ -1,0 +1,21 @@
+Modulos.
+
+1.- Permiso de Escritura para las carpetas del proyecto.
+
+.-->   sudo setfacl -d -m g::rwx -R /var/www/html/[proyecto]/
+
+Modulos requeridos.
+
+.- admin_toolbar address ludwing commerce entity inline_entity_form
+
+#Ir a reportes paquetes.
+
+Nos muestra tres a configurar.
+
+crear las carpetas y bajar los paquetes.
+
+Ojo cambiar el nombre al pegar la nueva carpeta de paquetes.
+
+
+
+
