@@ -1,0 +1,30 @@
+sudo mysql
+
+CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena';
+
+GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+Limpiamos los privilegios.
+
+sudo systemctl stop mysql
+
+sudo systemctl start mysql
+
+
+###################
+system clear;
+
+show databases;
+
+Borrar base.
+
+drop database [base];
+
+##################33
+Crear la base con cotejamiento
+
+CREATE DATABASE dbname CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
