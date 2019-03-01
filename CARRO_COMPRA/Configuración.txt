@@ -6,7 +6,9 @@ Modulos.
 
 Modulos requeridos.
 
-.- admin_toolbar address ludwing commerce entity inline_entity_form
+.- drupal moi admin_toolbar ludwing entity inline_entity_form entity_reference_revisions profile state_machine
+
+.- drupal moi address commerce
 
 #Ir a reportes paquetes.
 

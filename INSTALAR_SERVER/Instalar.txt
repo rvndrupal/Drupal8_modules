@@ -26,7 +26,8 @@ https://maslinux.es/como-configurar-el-servidor-apache/ -->chingona configurar
 ES CON ESTO 
 
 sudo a2enmod rewrite  --> SE INSTALA  Y EN EL ARCHIVO
-cd /etc/apache2/apache2.conf  
+cd /etc/apache2/
+sudo nano apache2.conf  
 
 poner  la variable ALL
 
@@ -54,6 +55,8 @@ Cambiar el host donde dice localhost -> ponemos lo que queramos.
 7.-sudo apt-get install mysql-server
 
 Datos del usuario root
+
+Primero hacer lo de mysql usuario y passwrod para poder configurar.
 
 8.-sudo apt-get install phpmyadmin php-mbstring php-gettext
 
