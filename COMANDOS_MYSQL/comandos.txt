@@ -1,3 +1,9 @@
+##################################333
+Migrar la base.
+
+mysql -u rodrigo -p test < /home/rodrigo/Descargas/base.sql 
+
+
 sudo mysql
 
 CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena';
