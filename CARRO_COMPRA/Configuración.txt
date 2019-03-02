@@ -8,7 +8,11 @@ Modulos requeridos.
 
 .- drupal moi admin_toolbar ludwing entity inline_entity_form entity_reference_revisions profile state_machine
 
-.- drupal moi address commerce  commerce_paypal admin_toolbar
+.- drupal mod ludwig address commerce  commerce_paypal coffee
+
+Instalar modulos por pasos.
+ .- drupal mod solo para instalar.
+
 
 #Ir a reportes paquetes.
 
