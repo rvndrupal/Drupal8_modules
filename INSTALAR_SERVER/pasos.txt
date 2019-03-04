@@ -1,0 +1,77 @@
+sudo apt-get update
+
+sudo apt-get install apache2
+
+Iniciar --> sudo systemctl start apache2
+
+Reiniciar-->  sudo systemctl restart apache2
+
+sudo a2enmod rewrite
+
+cd /etc/apache2/
+sudo nano apache2.conf
+
+<Directory /var/www/>
+	Options Indexes FollowSymLinks
+	AllowOverride All
+	Require all granted
+</Directory>
+
+
+#########################################################
+Mysql
+
+sudo apt-get install mysql-server
+
+sudo mysql
+
+CREATE USER 'nombre_usuario'@'localhost' IDENTIFIED BY 'tu_contrasena';
+
+GRANT ALL PRIVILEGES ON * . * TO 'nombre_usuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+Limpiamos los privilegios.
+
+exit;
+
+sudo systemctl stop mysql
+
+sudo systemctl start mysql
+
+CREATE DATABASE dbname CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+
+############################################################
+sudo apt-get install phpmyadmin php-mbstring php-gettext
+
+
+######################################################################
+Drupal console.
+
+ADD composer
+1.- sudo apt install curl php-cli php-mbstring git unzip
+
+2.-curl -sS https://getcomposer.org/installer | php
+
+3.-sudo mv composer.phar /usr/local/bin/composer
+
+################################################
+
+1.-curl https://drupalconsole.com/installer -L -o drupal.phar
+
+2.- mv drupal.phar /usr/local/bin/drupal
+
+3.- chmod +x /usr/local/bin/drupal
+
+4.-drupal self-update  -->se actualiza la consola
+
+
+Creando proyecto.
+
+drupal site:new -->puede ser Raiz
+
+drupal site:install  --> en donde esta el proyecto 
+
+cd /var/www/html/[proyecto]
