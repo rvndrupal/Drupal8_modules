@@ -46,6 +46,8 @@ CREATE DATABASE dbname CHARACTER SET utf8 COLLATE utf8_general_ci;
 ############################################################
 sudo apt-get install phpmyadmin php-mbstring php-gettext
 
+demo
+
 
 ######################################################################
 Drupal console.
