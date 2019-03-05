@@ -49,7 +49,7 @@ Modulos.
   module:update (moup)                    Update core, module or modules in the application
 
 
-drupal moi devel devel_php admin_toolbar search_kint  
+drupal moi devel devel_php admin_toolbar search_kint createandcontinue
 
 drupal moi panels page_manager
 
